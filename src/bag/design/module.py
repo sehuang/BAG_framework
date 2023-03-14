@@ -567,8 +567,9 @@ class Module(DesignMaster):
                        dx: int = 0, dy: int = 0) -> None:
         """Replace the given instance by an array of instances.
 
-        This method will replace self.instances[inst_name] by a list of
-        Modules.  The user can then design each of those modules.
+        This method will replace self.instances[inst_name] and create the new
+        instances in its place. These can be accessed as self.instances[new_inst_name]
+        and designed accordingly.
 
         Parameters
         ----------
